@@ -21,6 +21,10 @@ module.exports = {
         placeholder: "rgb(255 255 255 0.25)",
       },
     },
+    screens: {
+      xl: "1440px",
+      // => @media (min-width: 1440px) { ... }
+    },
   },
   plugins: [],
 };
