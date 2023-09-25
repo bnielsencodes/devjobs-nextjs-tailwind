@@ -1,3 +1,16 @@
+import scootLogo from "/public/assets/logos/scoot.svg";
+import blogrLogo from "/public/assets/logos/blogr.svg";
+import vectorLogo from "/public/assets/logos/vector.svg";
+import officeliteLogo from "/public/assets/logos/officelite.svg";
+import podLogo from "/public/assets/logos/pod.svg";
+import creativeLogo from "/public/assets/logos/creative.svg";
+import pomodoroLogo from "/public/assets/logos/pomodoro.svg";
+import makerLogo from "/public/assets/logos/maker.svg";
+import coffeeroastersLogo from "/public/assets/logos/coffeeroasters.svg";
+import mastercraftLogo from "/public/assets/logos/mastercraft.svg";
+import crowdfundLogo from "/public/assets/logos/crowdfund.svg";
+import typemasterLogo from "/public/assets/logos/typemaster.svg";
+
 // eslint-disable-next-line
 export default [
   {
