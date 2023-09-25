@@ -1,4 +1,6 @@
+"use client";
 import { useState, useEffect } from "react";
+import Header from "./components/Header";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,4 +21,9 @@ export default function Home() {
     console.log("it works!");
   }
 
+  return (
+    <div className={darkMode ? "container dark" : "container"}>
+      <Header darkMode={darkMode} toggleTheme={toggleTheme} />
+    </div>
+  );
 }
