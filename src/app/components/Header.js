@@ -4,6 +4,8 @@ import desktopImage from "/public/assets/desktop/bg-pattern-header.svg";
 import tabletImage from "/public/assets/tablet/bg-pattern-header.svg";
 import mobileImage from "/public/assets/mobile/bg-pattern-header.svg";
 import logo from "/public/assets/desktop/logo.svg";
+import ToggleTheme from "./ToggleTheme";
+
 export default function Header(props) {
   // store the width of the viewport in pixels
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -37,6 +39,7 @@ export default function Header(props) {
       }}
     >
       <Image src={logo} alt="devjobs logo" width="0" height="0" sizes="100vw" />
+      <ToggleTheme darkMode={props.darkMode} toggleTheme={props.toggleTheme} />
     </header>
   );
 }
