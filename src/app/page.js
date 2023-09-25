@@ -13,5 +13,10 @@ export default function Home() {
     }
   }, []);
 
+  // toggle dark mode
+  function toggleTheme() {
+    setDarkMode((prevMode) => !prevMode);
+    console.log("it works!");
+  }
 
 }
