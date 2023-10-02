@@ -19,9 +19,14 @@ module.exports = {
         accent: "#5964e0",
         "accent-light": "#939bf4",
         placeholder: "rgb(255 255 255 0.25)",
+        inputBorder: "rgba(110, 128, 152, 0.2)",
       },
     },
     screens: {
+      md: "768px",
+      // => @media (min-width: 1440px) { ... }
+      lg: "1024px",
+      // => @media (min-width: 1440px) { ... }
       xl: "1440px",
       // => @media (min-width: 1440px) { ... }
     },
