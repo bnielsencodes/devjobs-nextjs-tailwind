@@ -22,8 +22,14 @@ export default function Home() {
   }
 
   return (
-    <div className={darkMode ? "container dark" : "container"}>
+    <div>
       <Header darkMode={darkMode} toggleTheme={toggleTheme} />
+      <main
+        className={`${
+          darkMode ? "bg-neutral-600" : "bg-neutral-200"
+        } relative flex flex-col items-center pt-[17px] px-6 pb-[62px] md:pt-7 md:px-[39px] xl:pt-[70px] xl:px-[165px] xl:pb-[104px]`}
+      >
+      </main>
     </div>
   );
 }
