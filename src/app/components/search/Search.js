@@ -1,3 +1,6 @@
+import Image from "next/image";
+import filterIcon from "/public/assets/mobile/icon-filter.svg";
+import filterIconDark from "/public/assets/mobile/icon-filter-dark.svg";
 import FilterTitle from "@/app/components/search/FilterTitle";
 import FilterLocation from "./FilterLocation";
 
@@ -20,6 +23,25 @@ export default function Search(props) {
             Full Time<span className="hidden xl:block xl:ml-1">Only</span>
           </span>
         </label>
+        {props.darkMode ? (
+          <Image
+            className="w-5 h-5 mr-4 cursor-pointer"
+            src={filterIconDark}
+            alt="filter icon"
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
+        ) : (
+          <Image
+            className="w-5 h-5 mr-4 cursor-pointer"
+            src={filterIcon}
+            alt="filter icon"
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
+        )}
       </div>
     </form>
   );
