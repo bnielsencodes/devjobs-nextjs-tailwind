@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import data from "./data";
 import Header from "./components/Header";
 import Search from "./components/search/Search";
+import Job from "./components/Job";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,6 +37,9 @@ export default function Home() {
         } relative flex flex-col items-center pt-[17px] px-6 pb-[62px] md:pt-7 md:px-[39px] xl:pt-[70px] xl:px-[165px] xl:pb-[104px]`}
       >
         <Search darkMode={darkMode} />
+        <div className="w-full mb-8 md:grid md:grid-cols-2 md:gap-x-[9px] xl:grid-cols-3 xl:gap-w-[30px]">
+          {jobsList}
+        </div>
       </main>
     </div>
   );
