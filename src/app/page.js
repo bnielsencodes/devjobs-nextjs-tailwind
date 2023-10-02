@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import data from "./data";
 import Header from "./components/Header";
 import Search from "./components/search/Search";
 
@@ -21,6 +22,10 @@ export default function Home() {
     setDarkMode((prevMode) => !prevMode);
     console.log("it works!");
   }
+
+  const jobsList = data.map((job) => {
+    return <Job key={job.id} job={job} darkMode={darkMode} />;
+  });
 
   return (
     <div>
