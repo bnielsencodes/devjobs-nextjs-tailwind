@@ -8,6 +8,11 @@ import FilterLocation from "./FilterLocation";
 export default function Search(props) {
   return (
     <form
+      className={`${
+        props.darkMode ? "bg-neutral-500" : "bg-neutral-100"
+      } flex items-center justify-between w-full h-20 px-[16px] rounded-md -translate-y-[57px] md:justify-center -md:translate-y-[70px] -xl:translate-y-[109px] `}
+      // action="index.html"
+      method="post"
     >
       <FilterTitle darkMode={props.darkMode} />
       <FilterLocation darkMode={props.darkMode} />
