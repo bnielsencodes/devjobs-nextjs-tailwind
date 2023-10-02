@@ -4,6 +4,7 @@ import data from "./data";
 import Header from "./components/Header";
 import Search from "./components/search/Search";
 import Job from "./components/Job";
+import MoreButton from "./components/MoreButton";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,6 +41,7 @@ export default function Home() {
         <div className="w-full mb-8 md:grid md:grid-cols-2 md:gap-x-[9px] xl:grid-cols-3 xl:gap-w-[30px]">
           {jobsList}
         </div>
+        <MoreButton darkMode={darkMode} />
       </main>
     </div>
   );
