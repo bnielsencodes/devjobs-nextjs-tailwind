@@ -1,6 +1,7 @@
 import Image from "next/image";
 import filterIcon from "/public/assets/mobile/icon-filter.svg";
 import filterIconDark from "/public/assets/mobile/icon-filter-dark.svg";
+import searchIconMobile from "/public/assets/mobile/icon-search.svg";
 import FilterTitle from "@/app/components/search/FilterTitle";
 import FilterLocation from "./FilterLocation";
 
@@ -42,6 +43,19 @@ export default function Search(props) {
             sizes="100vw"
           />
         )}
+        <div className="flex items-center justify-center w-12 h-12 rounded-[5px] bg-accent cursor-pointer hover:bg-accent-light md:flex md:items-center md:justify-center md:w-20 md:ml-7 xl:w-[123px] xl:ml-[27px]">
+          <Image
+            className="w-5 h-5 md:hidden"
+            src={searchIconMobile}
+            alt="magnifying glass icon"
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
+          <span className="hidden md:block md:text-neutral-100 font-bold">
+            Search
+          </span>
+        </div>
       </div>
     </form>
   );
